@@ -1,25 +1,9 @@
 #include <stdio.h>
-#include <locale.h>
+#include <stdlib.h>
+#include "poligono_h.h"
 
-int main(int argc, char *argv[]){
-	
-setlocale(LC_ALL,"Portuguese");	
-	int i;
-	
-	if(argc>1){
-		
-		printf("foram inseridos %d argumentos:",argc);
-		for(i=0;i<argc;i++){
-			printf ("%s\n",argv[i]);
-		}
-		
-	} else {
-		printf("não foram inseridos argumentos no programa.\n");
-	}
-	
-	
-	
-	
-	
+
+int main(int argc, char *argv[]) {
+	printf("%.2f.\n",calcAreaRetangulo(10,10));
 	
 }
